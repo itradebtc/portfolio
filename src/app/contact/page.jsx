@@ -1,5 +1,4 @@
 "use client"
-// import React from 'react'
 import {TiSocialLinkedin, TiSocialInstagram, TiSocialTwitterCircular} from 'react-icons/ti'
 import { FcBusinessman, FcIphone, FcFeedback } from 'react-icons/fc'
 import { useRef } from 'react'
@@ -9,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { motion, AnimatePresence } from "framer-motion";
 
 
-export default function page() {
+export default function Page() {
   const form = useRef();
 
   const sendmail = (e) => {
