@@ -25,7 +25,7 @@ export default function Page() {
 }
 
   return (
-    <div className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] w-fit p-7 md:p-20'>
+    <div className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] w-[100dvw] p-7 md:p-20'>
       <AnimatePresence>
             <motion.div
             initial={{ opacity: 0, y: 15 }}
