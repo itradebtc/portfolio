@@ -37,7 +37,7 @@ export default function page() {
             >
                 <p className="text-[hsl(207,13%,34%)] text-[16px] md:pt-[145px] md:text-right">
                   Welcome to my professional portfolio. I love working on 
-                  projects of any kind and I'm open to freelance work! Check
+                  projects of any kind and I&#39;m open to freelance work! Check
                   my work and feel free to contact me.
                 </p>
             </motion.div>

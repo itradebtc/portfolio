@@ -11,7 +11,7 @@ export default function Home() {
   const pathname = usePathname();
 
   useEffect( () => {
-    if(isActive) setIsActive(false)
+    if('isActive') setIsActive(false)
   }, [pathname])
 
   return (
