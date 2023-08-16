@@ -1,10 +1,8 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 import { Montserrat } from 'next/font/google'
 import Header from '../components/header';
 import Foot from '../components/header/nav/foot';
 
-const inter = Inter({ subsets: ['latin'] })
 const mont = Montserrat({ subsets:['latin'], 
 weight:['100', '200', '300', '400', '500', '600', '700', '800', '900']})
 
