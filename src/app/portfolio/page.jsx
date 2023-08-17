@@ -30,7 +30,7 @@ export default function page(){
             />
             </h3>
         </div>
-        <div className='p-4 md:p-7'>
+        <div className='w-auto p-4 md:p-7'>
           <div className='grid grid-cols-[200px,200px] grid-rows-[100px, 100px] pt-6 gap-8 md:flex md:justify-around items-center md:py-16 md:px-12 md:text-xl'>
               <AnimatePresence>
                 <motion.div
