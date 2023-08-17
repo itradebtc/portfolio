@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] md:h-[100vh]'>
+    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] h-[100dvh] md:h-[100vh]'>
         <div className='p-8'>
         <Image src={logo} width={125} height={100} alt='Logo' />
         </div>
