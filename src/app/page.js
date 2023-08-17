@@ -11,7 +11,7 @@ export default function Home() {
         <div className='p-8'>
         <Image src={logo} width={125} height={100} alt='Logo' />
         </div>
-        <div className='mx-auto p-20 md:m-12 md:p-32'>
+        <div className='mx-auto p-32 md:m-12 md:p-32'>
       <Link href='/about'>
         <AnimatePresence>
             <motion.div
