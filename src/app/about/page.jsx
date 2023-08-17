@@ -20,7 +20,7 @@ export default function page() {
             initial={{ opacity: 0, x: -500 }}
             animate={{ opacity: 1, x: 0 }}
             exist={{ opacity: 0, x: 0 }}
-            transition={{ delay: 1, duration: 1, ease: [0.22, 1, 0.36, 1]}}
+            transition={{ delay: .8, duration: 1, ease: [0.22, 1, 0.36, 1]}}
             >
                 <h1 className="py-5 md:py-16 text-[24px] md:text-[35px] uppercase md:text-left">
                   i am Kelubia Urubusi - a passionate frontend web developer with

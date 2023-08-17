@@ -96,7 +96,7 @@ export default function Page() {
                       exist={{ opacity: 0, y: 0 }}
                       transition={{ delay: .4, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                       >
-                        <button className='bg-black text-white py-3 px-7 rounded-md rounded-br-[34px] hover:text-[hsl(207,13%,34%)]'>Send Message</button>
+                        <button className='bg-black text-white py-3 px-7 rounded-md rounded-br-[34px]'>Send Message</button>
                       </motion.div>
                     </AnimatePresence> 
                 </form>
