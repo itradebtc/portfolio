@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function page() {
   return (
-    <main className="bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] py-5 px-6 md:px-36 md:py-7">
+    <main className="bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] h-[100dvh] py-5 px-6 md:px-36 md:py-7">
       {/* my brief bio */}
       <div className='flex space-x-2 text-[hsl(207,13%,34%)] pt-24 md:pt-12'>
         <SlLocationPin size={20} /> <p>Lagos, Nigeria</p>
@@ -51,7 +51,7 @@ export default function page() {
         />    */}
        </div>
        {/* my achievement */}
-       <div className='p-12 md:p-7'>
+       {/* <div className='p-12 md:p-7'>
           <div className='grid grid-cols-[200px,200px] grid-rows-[100px, 100px] pt-6 gap-8 md:flex md:justify-around items-center md:py-16 md:px-12 md:text-xl'>
               <AnimatePresence>
                 <motion.div
@@ -132,9 +132,18 @@ export default function page() {
                 </motion.div>
               </AnimatePresence> 
           </div>
-       </div>
+       </div> */}
        <div>
-        <Goat />
+            <AnimatePresence>
+                <motion.div
+                initial={{ opacity: 0, y: 500 }}
+                animate={{ opacity: 1, y: 0 }}
+                exist={{ opacity: 0, y: 0 }}
+                transition={{ delay: .8, duration: 1, ease: [0.22, 1, 0.36, 1]}}
+                >
+                  <Goat />
+                </motion.div>
+            </AnimatePresence>
        </div>
     </main>
   )

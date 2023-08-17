@@ -7,8 +7,8 @@
       cursor: pointer;
       /* position: relative; */
       /* overflow: hidden; */
-      font-weight: 100;
-      font-size: 30px;
+      font-weight: normal;
+      font-size: 20px;
 
       padding: 4px;
       text-transform: uppercase;
