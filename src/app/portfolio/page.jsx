@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function page(){
   return (
-    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] pt-28'>
+    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] md:h-[100vh] pt-28'>
       {/* <div className='py-4 px-7'>
         <button className='border border-black py-2 px-4'><a href='../public/mycv.pdf' download="mycv.pdf">Download CV</a></button>
       </div> */}
-        <div className='flex flex-col md:gap-5 text-center justify-center items-center md:justify-center md:text-center font-bold m-2 md:m-0'>
+        <div className='flex flex-col md:gap-5 text-center justify-center items-center w-auto md:justify-center md:text-center font-bold m-2 md:m-0'>
             <h1 className='uppercase text-2xl md:text-7xl'>coming soon</h1>
             <h2>I&#39;m</h2>
             <h3 className='uppercase text-lg md:text-4xl text-green-800'>

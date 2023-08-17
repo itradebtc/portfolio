@@ -25,7 +25,7 @@ export default function Page() {
 }
 
   return (
-    <div className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] md:h-[100dvh] p-7 md:p-20'>
+    <div className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] md:h-[100vh] p-7 md:p-20'>
       <AnimatePresence>
             <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -38,8 +38,8 @@ export default function Page() {
             </motion.div>
       </AnimatePresence>
       {/* form */}
-      <div className='md:grid md:grid-cols-2 md:gap-44'>
-        <div className='md:row-span-2 w-fit md:w-[40vw] md:mx-7'>
+      <div className='md:grid md:grid-cols-2 md:gap-44 w-auto'>
+        <div className='md:row-span-2 md:w-[40vw] md:mx-7'>
                 <form ref={form} onSubmit={sendmail} className='space-y-4 py-4 px-8'>
                     <AnimatePresence>
                         <motion.div
@@ -47,7 +47,7 @@ export default function Page() {
                         animate={{ opacity: 1, x: 0 }}
                         exist={{ opacity: 0, x: 0 }}
                         transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
-                        className='flex flex-col'
+                        className='flex flex-col w-auto'
                         >
                           <label className='py-2'>Full Name <span className='text-red-900 text-sm'>*</span></label>
                           <input type="text" placeholder="Full Name"  name="name" className="border-l-4 border-l-green-700 border-2 px-3 outline-none h-[50px] rounded-md bg-blue-50" required />
@@ -59,7 +59,7 @@ export default function Page() {
                         animate={{ opacity: 1, x: 0 }}
                         exist={{ opacity: 0, x: 0 }}
                         transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
-                        className='flex flex-col'
+                        className='flex flex-col w-auto'
                         >
                           <label className='py-2'>Email <span className='text-red-900 text-sm'>*</span></label>
                           <input type="email" placeholder="Email" name="email"  className="border-l-4 border-l-green-700 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md bg-blue-50" required />
@@ -71,7 +71,7 @@ export default function Page() {
                         animate={{ opacity: 1, x: 0 }}
                         exist={{ opacity: 0, x: 0 }}
                         transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
-                        className='flex flex-col'
+                        className='flex flex-col w-auto'
                         >
                           <label className='py-2'>Phone <span className='text-red-900 text-sm'>*</span></label>
                           <input type="tel" placeholder="Phone" name="phone" minLength={11} maxLength={11}  className="border-l-4 border-l-green-700 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md bg-blue-50" required />
@@ -83,7 +83,7 @@ export default function Page() {
                         animate={{ opacity: 1, x: 0 }}
                         exist={{ opacity: 0, x: 0 }}
                         transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
-                        className='flex flex-col'
+                        className='flex flex-col w-auto'
                         >
                           <label>Message <span className='text-red-900 text-sm'>*</span></label>
                           <textarea placeholder="Write a message" name="message" rows="4" cols="50" className="border-l-4 border-l-green-700 border-2 border-gray-25 px-3 py-1 outline-none h-[100px] rounded-md bg-blue-50" required ></textarea>
