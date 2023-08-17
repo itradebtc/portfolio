@@ -9,7 +9,7 @@
       /* overflow: hidden; */
       font-weight: normal;
       font-size: 20px;
-
+      width: auto;
       padding: 4px;
       text-transform: uppercase;
     }

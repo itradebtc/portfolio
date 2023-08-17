@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function page(){
   return (
-    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] h-[100dvh] pt-28'>
+    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] pt-28'>
       {/* <div className='py-4 px-7'>
         <button className='border border-black py-2 px-4'><a href='../public/mycv.pdf' download="mycv.pdf">Download CV</a></button>
       </div> */}
