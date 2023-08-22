@@ -230,7 +230,7 @@ export default function page(){
                 transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
                   <p className='text-2xl bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent pb-7'>
-                    I like building things. Here are few things I've built thus far. Most, if not all of them, were built with Next Js and are responsive on mobile.
+                    I like building things. Here are few things I&#39;ve built thus far. Most, if not all of them, were built with Next Js and are responsive on mobile.
                   </p>
                 </motion.div>
               </AnimatePresence>
