@@ -24,7 +24,7 @@ export default function page() {
             >
                 <h1 className="py-5 md:py-16 text-[24px] md:text-[35px] uppercase md:text-left">
                   i am Kelubia Urubusi - a passionate frontend web developer with
-                  experience in html, css, javascript and react.
+                  experience in html, css, javascript react and next js.
                 </h1>
             </motion.div>
         </AnimatePresence>
