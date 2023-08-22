@@ -85,8 +85,8 @@ const myjob = job.map(work =>(
           <p className='uppercase'>Created with {work.madeWith}</p>
         </h2>
         <p className='flex justify-between items-center gap-2'>
-          <a href={work.github} target='_blank' title='View Code'><FaGithub size={25} className='text-green-800'/></a>
-          <a href={work.site} target='_blank' title='View Site'><FaShareSquare size={25} className='text-green-800' /></a>
+          <a href={work.github} target='_blank' title='View Code'><FaGithub size={25} className='text-green-800 hover:scale-105'/></a>
+          <a href={work.site} target='_blank' title='View Site'><FaShareSquare size={25} className='text-green-800 hover:scale-105' /></a>
         </p>
       </div>
   </section>
