@@ -94,7 +94,7 @@ const myjob = job.map(work =>(
 
 export default function page(){
   return (
-    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] w-auto h-[420vh] md:h-[220vh] p-7 md:p-14'>
+    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] w-auto h-[410vh] md:h-[220vh] p-7 md:p-14'>
       <div>
             <AnimatePresence>
                 <motion.div
