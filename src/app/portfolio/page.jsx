@@ -21,7 +21,7 @@ const job = [
   },
   {
       id: 2,
-      name: 'portfolio',
+      name: 'portfo',
       title: 'First Portfolio',
       madeWith: ['Html, Css, Javascript'],
       image: 'https://github.com/itradebtc/doctorsimages/blob/main/First%20Portfolio.png?raw=true',
@@ -77,16 +77,24 @@ const job = [
 ]
 
 const myjob = job.map(work =>(
-  <section key={work.id} className='p-4 shadow-2xl bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent'>
+  <section key={work.id} className='p-4 shadow-2xl bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent hover:shadow-2xl'>
       <h1 className='text-xl py-3'>{work.title}</h1>
-      <Image src={work.image} width={500} height={500} alt='Picture of Work'/>
+      <Link href={`/portfolio/${work.name}`}>
+        <Image src={work.image} width={500} height={500} alt='Picture of Work'/>
+      </Link>
       <div className='flex justify-between items-center py-3'>
         <h2>
           <p className='uppercase'>Created with {work.madeWith}</p>
         </h2>
         <p className='flex justify-between items-center gap-2'>
-          <a href={work.github} target='_blank' title='View Code'><FaGithub size={25} className='text-green-800 hover:scale-105'/></a>
-          <a href={work.site} target='_blank' title='View Site'><FaShareSquare size={25} className='text-green-800 hover:scale-105' /></a>
+          <a href={work.github} target='_blank' title='View Code' className='text-[12px]' >
+            Github Code
+            <FaGithub size={25} className='text-green-800 hover:scale-105'/>
+          </a>
+          <a href={work.site} target='_blank' title='View Site' className='text-[12px]' >
+            Live Demo
+            <FaShareSquare size={25} className='text-green-800 hover:scale-105' />
+          </a>
         </p>
       </div>
   </section>
@@ -94,7 +102,7 @@ const myjob = job.map(work =>(
 
 export default function page(){
   return (
-    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] w-auto h-[410vh] md:h-[220vh] p-7 md:p-14'>
+    <main className='bg-gradient-to-r from-[#abbaab] via-[#ffffff] to-[#abbaab] w-auto h-[480vh] md:h-[240vh] p-7 md:p-14'>
       <div>
             <AnimatePresence>
                 <motion.div
@@ -176,7 +184,7 @@ export default function page(){
                 transition={{ delay: .5, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
                     <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
-                    javascript
+                    js
                     </p>
                     <SiJavascript size={50} className='text-green-800' />
                 </motion.div>
@@ -191,7 +199,7 @@ export default function page(){
                     <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
                     tailwind
                     </p>
-                    <SiTailwindcss size={50} className='text-green-800' />
+                    <SiTailwindcss size={50} className='text-green-800 items-center' />
                 </motion.div>
               </AnimatePresence>    
               <AnimatePresence>
