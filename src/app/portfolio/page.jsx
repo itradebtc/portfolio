@@ -4,10 +4,12 @@ import Typewriter from 'typewriter-effect'
 import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiReact } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { motion, AnimatePresence } from "framer-motion";
+import { Poppins } from 'next/font/google'
 import Image from 'next/image'
 import { FaGithub, FaShareSquare } from 'react-icons/fa'
 import Link from 'next/link'
-import { scale } from '@/src/components/header/anim'
+
+const poppins = Poppins({ subsets: ["latin"], weight:['800'] });
 
 const job = [
   {
@@ -77,10 +79,10 @@ const job = [
 ]
 
 const myjob = job.map(work =>(
-  <section key={work.id} className='p-4 shadow-2xl bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent hover:shadow-2xl'>
-      <h1 className='text-xl py-3'>{work.title}</h1>
+  <section key={work.id} className='p-4 shadow-2xl hover:shadow-2xl'>
+      <h1 className='text-xl p-3'>{work.title}</h1>
       <Link href={`/portfolio/${work.name}`}>
-        <Image src={work.image} width={500} height={500} alt='Picture of Work'/>
+        <Image src={work.image} width={500} height={500} alt='Picture of project' className='hover:ease-in duration-200 hover:scale-105 hover:cursor-pointer'/>
       </Link>
       <div className='flex justify-between items-center py-3'>
         <h2>
@@ -111,7 +113,7 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                  <h1 className='text-5xl bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:pb-7'>
+                  <h1 className='text-5xl uppercase md:pb-7'>
                     Projects
                   </h1>
                 </motion.div>
@@ -125,15 +127,15 @@ export default function page(){
                 exist={{ opacity: 0, x: 0 }}
                 transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                <h2 className='flex gap-3 text-lg md:text-2xl bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent'>I have good knowledge of  
-                  <span className='bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent uppercase'>
+                <h2 className='flex gap-6 text-lg md:text-4xl '>Technologies I work with:  
+                  <span className={`${poppins.className} bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:text-5xl text-center uppercase`}>
                     <Typewriter 
                     options={{
                     strings: [
                       "html",
                       "css",
                       "javascript",
-                      "tailwind",
+                      "tailwind css",
                       "react",
                       "next js"
                     ],
@@ -149,7 +151,7 @@ export default function page(){
               </div>
             </div>
         <div className='w-auto p-4 md:p-7'>
-          <div className='grid grid-cols-[100px,100px,100px] grid-rows-[100px,100px] w-auto pt-3 md:gap-8 md:flex md:items-center md:text-center md:py-5 md:px-12 md:text-xl md:font-black'>
+          <div className='grid grid-cols-[100px,100px,100px] grid-rows-[100px,100px] w-auto pt-3 md:gap-8 md:flex md:justify-between md:items-center md:text-center md:py-5 md:px-12 md:text-xl md:font-black'>
               <AnimatePresence>
                 <motion.div
                 initial={{ opacity: 0, y: 500 }}
@@ -157,10 +159,10 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                    <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
+                    {/* <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
                     html
-                    </p>
-                    <SiHtml5 size={50} className='text-green-800' />
+                    </p> */}
+                    <SiHtml5 size={100} className="hover:ease-in duration-200 hover:scale-110 hover:cursor-pointer text-orange-500" />
                 </motion.div>
               </AnimatePresence>    
               <AnimatePresence>
@@ -170,10 +172,10 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .4, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                    <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
+                    {/* <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
                     css
-                    </p>
-                    <SiCss3 size={50} className='text-green-800' />
+                    </p> */}
+                    <SiCss3 size={100} className="hover:ease-in duration-200 hover:scale-110 hover:cursor-pointer text-blue-600" />
                 </motion.div>
               </AnimatePresence>    
               <AnimatePresence>
@@ -183,10 +185,10 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .5, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                    <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
+                    {/* <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
                     js
-                    </p>
-                    <SiJavascript size={50} className='text-green-800' />
+                    </p> */}
+                    <SiJavascript size={100} className="hover:ease-in duration-200 hover:scale-110 hover:cursor-pointer text-yellow-300" />
                 </motion.div>
               </AnimatePresence>    
               <AnimatePresence>
@@ -196,10 +198,10 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .6, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                    <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
+                    {/* <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
                     tailwind
-                    </p>
-                    <SiTailwindcss size={50} className='text-green-800 items-center' />
+                    </p> */}
+                    <SiTailwindcss size={100} className="hover:ease-in duration-200 hover:scale-110 hover:cursor-pointer text-teal-300" />
                 </motion.div>
               </AnimatePresence>    
               <AnimatePresence>
@@ -209,10 +211,10 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .7, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                    <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
+                    {/* <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
                     react
-                    </p>
-                    <SiReact size={50} className='text-green-800' />
+                    </p> */}
+                    <SiReact size={100} className="hover:ease-in duration-200 hover:scale-110 hover:cursor-pointer text-blue-400" />
                 </motion.div>
               </AnimatePresence>    
               <AnimatePresence>
@@ -222,10 +224,10 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .8, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                    <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
+                    {/* <p className='uppercase bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent md:flex md:flex-col text-center'>
                     next.js
-                    </p>
-                    <TbBrandNextjs size={50} className='text-green-800' />
+                    </p> */}
+                    <TbBrandNextjs size={100} className="hover:ease-in duration-200 hover:scale-110 hover:cursor-pointer" />
                 </motion.div>
               </AnimatePresence> 
           </div>
@@ -237,9 +239,9 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .3, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                  <p className='text-2xl bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent pb-7'>
+                  {/* <p className='text-2xl pb-7'>
                     I like building things. Here are few things I&#39;ve built thus far. Most, if not all of them, were built with Next Js and are responsive on mobile.
-                  </p>
+                  </p> */}
                 </motion.div>
               </AnimatePresence>
           <div className='bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent'>
@@ -250,7 +252,7 @@ export default function page(){
                 exist={{ opacity: 0, y: 0 }}
                 transition={{ delay: .5, duration: 1, ease: [0.22, 1, 0.36, 1]}}
                 >
-                   <div className='grid md:grid-cols-3 md:gap-4 absolute bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent hover:shadow-2xl'>
+                   <div className='grid pr-6 md:grid-cols-3 md:gap-3 md:pr-12 absolute bg-gradient-to-bl from-neutral-600 via-rose-600 to-indigo-500 bg-clip-text text-transparent'>
                      {myjob}
                    </div>
                 </motion.div>
