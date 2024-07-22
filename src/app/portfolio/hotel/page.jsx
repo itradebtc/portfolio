@@ -9,12 +9,12 @@ import Link from 'next/link';
 const job = [
   {
       id: 1,
-      name: 'password',
-      title: 'Password Generator',
+      name: 'Hotel',
+      title: 'Hotel Website',
       madeWith: ['Html, Css, Javascript'],
-      image: 'https://github.com/itradebtc/doctorsimages/blob/main/Password%20Generator.png?raw=true',
-      github: 'https://github.com/itradebtc/random/blob/main/src/passwordgenerator.html',
-      site: 'https://itradebtc.github.io/random/src/passwordgenerator.html',
+      image: 'https://github.com/itradebtc/doctorsimages/blob/main/liciavillehotel.png?raw=true',
+      github: 'https://github.com/itradebtc/liciavillehotel',
+      site: 'https://liciavillehotel.vercel.app/',
   },
 ]
 
